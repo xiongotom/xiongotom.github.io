@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unix哲学之表示原则 | 熊大叔</title>
+    <meta name="description" content="熊大叔放学习笔记的地方">
+    
+    
+    <link rel="preload" href="/assets/css/styles.e3e154d6.css" as="style"><link rel="preload" href="/assets/js/app.e3e154d6.js" as="script"><link rel="preload" href="/assets/js/7.f75c4de1.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.3c3b5234.css"><link rel="prefetch" href="/assets/js/1.3c3b5234.js"><link rel="prefetch" href="/assets/css/2.styles.bcbb21fa.css"><link rel="prefetch" href="/assets/js/2.bcbb21fa.js"><link rel="prefetch" href="/assets/js/3.526546c9.js"><link rel="prefetch" href="/assets/js/4.d5459fa8.js"><link rel="prefetch" href="/assets/js/5.d74144fe.js"><link rel="prefetch" href="/assets/js/6.1d07a4dc.js"><link rel="prefetch" href="/assets/js/8.f49c38ad.js"><link rel="prefetch" href="/assets/js/9.c87bfd1a.js"><link rel="prefetch" href="/assets/js/10.82ebb2ee.js"><link rel="prefetch" href="/assets/js/11.1153d3b4.js"><link rel="prefetch" href="/assets/js/12.47ab83b7.js"><link rel="prefetch" href="/assets/js/13.b82c22e5.js"><link rel="prefetch" href="/assets/js/14.739f230e.js"><link rel="prefetch" href="/assets/js/15.8fa44dd9.js"><link rel="prefetch" href="/assets/js/16.8dba2e81.js"><link rel="prefetch" href="/assets/js/17.40ab249f.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.3c3b5234.css"><link rel="stylesheet" href="/assets/css/2.styles.bcbb21fa.css"><link rel="stylesheet" href="/assets/css/styles.e3e154d6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">熊大叔</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Unix哲学读书笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Unix/PhilOverview.html" class="sidebar-link">Unix哲学基础</a></li><li><a href="/Unix/PhilModel.html" class="sidebar-link">Unix哲学模块原则</a></li><li><a href="/Unix/PhilClear.html" class="sidebar-link">Unix哲学之清晰原则</a></li><li><a href="/Unix/PhilCompose.html" class="sidebar-link">Unix哲学之组合原则</a></li><li><a href="/Unix/PhilSplit.html" class="sidebar-link">Unix哲学之分离原则</a></li><li><a href="/Unix/PhilConcise.html" class="sidebar-link">Unix哲学之简洁原则</a></li><li><a href="/Unix/PhilStingy.html" class="sidebar-link">Unix哲学之吝啬原则</a></li><li><a href="/Unix/PhilTransparent.html" class="sidebar-link">Unix哲学之透明性原则</a></li><li><a href="/Unix/PhilRobustness.html" class="sidebar-link">Unix哲学之健壮原则</a></li><li><a href="/Unix/PhilExpress.html" class="active sidebar-link">Unix哲学之表示原则</a></li><li><a href="/Unix/PhilPopular.html" class="sidebar-link">Unix哲学之通俗原则</a></li><li><a href="/Unix/PhilSilent.html" class="sidebar-link">Unix哲学之缄默原则</a></li><li><a href="/Unix/PhilRemedy.html" class="sidebar-link">Unix哲学之补救原则</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="unix哲学之表示原则"><a href="#unix哲学之表示原则" aria-hidden="true" class="header-anchor">#</a> Unix哲学之表示原则</h1> <p><em>《UNIX编辑艺术》读书笔记</em></p> <hr> <p><em>【声明】读书笔记包括原文摘抄和个人思考心得，原文一切版权归本书作者所有</em></p> <blockquote><p>把知识叠入数据以求逻辑质朴而健壮</p></blockquote> <p>正文摘抄：
+数据要比编程逻辑更容易驾驭。所以接下来，如果要在复杂的数据和复杂代码中选中一个，宁愿选择前者。更进一步：在设计中，你应该主动将代码的复杂度转移到数据之中去。</p> <p>理解及感受：
+代码逻辑是开发人员解决问题的思维体现，数据是需要解决问题的材料和目的。过于复杂的逻辑对于程序来说，很可能变成一种灾难。而对于复杂的数据，一般总能找到其规律或者建立模型，然后用相对简单的逻辑来处理数据。这样对于程序而言，确实是一种提高健壮性的好办法。</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间: </span> <span class="time">10/21/2018, 10:32:23 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Unix/PhilRobustness.html" class="prev">
+          Unix哲学之健壮原则
+        </a></span> <span class="next"><a href="/Unix/PhilPopular.html">
+          Unix哲学之通俗原则
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/7.f75c4de1.js" defer></script><script src="/assets/js/app.e3e154d6.js" defer></script>
+  </body>
+</html>
